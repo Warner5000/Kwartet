@@ -2,28 +2,21 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="CSS/prism_wit.css">
-    <script src="JS/prism.js"></script>
-    <!-- http://prismjs.com/ -->
-    <link rel="stylesheet" type="text/css" href="CSS/games.css">
+    <link rel="stylesheet" type="text/css" href="CSS/myGame.css">
     <script src="JS/P5/p5.min.js"></script>
-    <!-- https://p5js.org/download/ -->
+    
+    <!-- extra libraries -->
+    <script src="JS/P5/addons/p5.shape.js"></script>
+    <script src="JS/P5/addons/p5.sound.min.js"></script>
+
+    <!-- alle gebruikte klasses hebben hun eigen bestand -->
+    <script src='JS/class/Bal.js'></script>
+    <script src='JS/class/Doel.js'></script>
+    <script src='JS/class/Ring.js'></script>
+
+    <!-- Dit is het bestand met het hoofdprogramma -->
+    <script src='JS/mijnGame.js'></script>
   </head>
   <body>
-    <div class="container" id="clicker">
-      <blockquote id="menu">
-      </blockquote>
-    </div>
-    <div class="container">
-      <div id="processing"></div>
-    </div>
-
-    <div class="container" id="button-container" style='text-align: center;'>
-      <button class="hoofdstuk" onclick="toonCode()">Toon Javascript-Code</button>
-      <button class="hoofdstuk" id="Ubutton" onclick="toonUitwerkingen()">Toon Uitwerkingen</button>
-      <button class="hoofdstuk" id="Tbutton" onclick="gaTerug()">Terug naar Opgave</button>
-      <div id="code-container" style="display: none;"></div>
-    </div>
-    <script src="JS/SLOBF.js"></script>
   </body>
 </html>
